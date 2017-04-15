@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:ULL-ESIT-DSI-1617/evalua-strategy-pattern.git"
   },
   "keywords": [
     "js",
@@ -16,7 +16,7 @@
   "author": "Casiano Rodriguez Leon",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/ULL-ESIT-DSI-1617/evalua-strategy-pattern/issues"
   },
   "homepage": "",
   "dependencies": {
