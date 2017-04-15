@@ -2,7 +2,7 @@
 
 ### Aceptar Tarea
 
-* [Aceptar asignación de la tarea](https://classroom.github.com/assignment-invitations/95ea4fa680c9bd1768429268f3f942dc)
+* [Aceptar asignación de la tarea]()
 
 ### Forma de trabajo
 
