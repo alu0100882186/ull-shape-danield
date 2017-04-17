@@ -1,22 +1,60 @@
-module.exports = function(shape, options) {
-  var area = 0;
+'use strict'
 
-  switch (shape) {
-    case 'Triangle':
-      area = .5 * options.width * options.height;
-      break;
 
-    case 'Square':
-      area = Math.pow(options.width, 2);
-      break;
+let Shapes = {};
 
-    case 'Rectangle':
-      area = options.width * options.height;
-      break;
-
-    default:
-      throw new Error('Invalid shape: ' + shape);
+class Figura {
+       
+  constructor(shapes,options) {
+    this.shapes = shapes; 
+    this.options = options
   }
 
-  return area;
+  getArea() {
+      let shape = new Shapes[this.shapes](this.options)
+      let area = shape.getArea()
+      return area; 
+  }
+  
 }
+
+class Triangle extends Figura {
+    constructor(options) {
+      Shapes.Triangle = Triangle;
+      super("Triangle", options)
+      this.width = options.width;
+      this.height = options.height;
+    }
+    getArea() {
+      return 0.5 * this.width * this.height;
+    }
+}
+
+class Rectangle extends Figura {
+    constructor(options) {
+      Shapes.Rectangle = Rectangle;
+      super("Rectangle",options)
+      this.width = options.width; 
+      this.height = options.height;
+    }
+    getArea() {
+      return this.width * this.height;
+    }
+}
+
+class Square extends Figura {
+    constructor(options) {
+      Shapes.Square = Square; 
+      super("Square",options)
+      this.width = options.width;
+      this.height = options.height;
+    }
+    getArea() {
+      area = Math.pow(this.width,2) 
+      return area; 
+    }
+}
+
+let a = new Triangle({ width: 100, height: 100 });
+let s = a.getArea();
+console.log(s);
