@@ -2,8 +2,7 @@
 
 class Shape {
        
-  constructor(shape,options) {
-    this.shape = shape; 
+  constructor(options) {
     this.options = options
   }
 
@@ -20,7 +19,7 @@ module.exports.Shape = Shape;
 class Triangle extends Shape {
     constructor(options) {
       Shape.Shapes.Triangle = Triangle;
-      super("Triangle", options)
+      super(options)
       this.width = options.width;
       this.height = options.height;
     }
@@ -33,7 +32,7 @@ module.exports.Triangle = Triangle;
 class Rectangle extends Shape {
     constructor(options) {
       Shape.Shapes.Rectangle = Rectangle;
-      super("Rectangle",options)
+      super(options)
       this.width = options.width; 
       this.height = options.height;
     }
@@ -46,7 +45,7 @@ module.exports.Rectangle = Rectangle;
 class Square extends Shape {
     constructor(options) {
       Shape.Shapes.Square = Square; 
-      super("Square",options)
+      super(options)
       this.width = options.width;
       this.height = options.height;
     }
