@@ -1,9 +1,11 @@
-var getArea = require("../shapesarea.js");
+var Triangle = require('../triangle.js');
+var Square = require('../square.js');
+var Rectangle = require('../rectangle.js');
 
 describe("getArea", function() {
   it("must compute the triangle area correctly", function() {
-    var result = getArea('Triangle',  { width: 100, height: 100 });
-    /* There is a white space between consecutive columns */
-    result.should.match(/^5000$/);
+    let a = new Triangle({ width: 100, height: 50 });
+    let s = a.getArea();
+    s.should.match(/^5000$/);
   })
 });
