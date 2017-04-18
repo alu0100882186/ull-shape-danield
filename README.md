@@ -1,10 +1,5 @@
 ## Solución a la Práctica "Evaluar Strategy Pattern"
 
-### Ramas
-
-* [master](https://github.com/ULL-ESIT-DSI-1617/solution-evaluar-strategy-pattern/tree/master) Solución en la que se explicita la entrada en el hash para cada clase
-* [constructorname](https://github.com/ULL-ESIT-DSI-1617/solution-evaluar-strategy-pattern/tree/constructorname) Solución en la que se usa `this.constructor.name` como entrada de la clase
-
 ### Aceptar Tarea
 
 * [Aceptar asignación de la tarea]()
