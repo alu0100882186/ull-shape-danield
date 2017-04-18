@@ -1,26 +1,26 @@
 'use strict'
 
-
-let Shapes = {};
-
-class Figura {
+class Shape {
        
-  constructor(shapes,options) {
-    this.shapes = shapes; 
+  constructor(shape,options) {
+    this.shape = shape; 
     this.options = options
   }
 
   getArea() {
-      let shape = new Shapes[this.shapes](this.options)
+      //let shape = new Shape.Shapes[this.shape](this.options)
+      let shape = new Shape.Shapes[this.constructor.name](this.options)
       let area = shape.getArea()
       return area; 
   }
   
 }
+Shape.Shapes = Shape.Shapes || {};
+module.exports.Shape = Shape;
 
-class Triangle extends Figura {
+class Triangle extends Shape {
     constructor(options) {
-      Shapes.Triangle = Triangle;
+      Shape.Shapes.Triangle = Triangle;
       super("Triangle", options)
       this.width = options.width;
       this.height = options.height;
@@ -29,10 +29,11 @@ class Triangle extends Figura {
       return 0.5 * this.width * this.height;
     }
 }
+module.exports.Triangle = Triangle;
 
-class Rectangle extends Figura {
+class Rectangle extends Shape {
     constructor(options) {
-      Shapes.Rectangle = Rectangle;
+      Shape.Shapes.Rectangle = Rectangle;
       super("Rectangle",options)
       this.width = options.width; 
       this.height = options.height;
@@ -41,20 +42,18 @@ class Rectangle extends Figura {
       return this.width * this.height;
     }
 }
+module.exports.Rectangle = Rectangle;
 
-class Square extends Figura {
+class Square extends Shape {
     constructor(options) {
-      Shapes.Square = Square; 
+      Shape.Shapes.Square = Square; 
       super("Square",options)
       this.width = options.width;
       this.height = options.height;
     }
     getArea() {
-      area = Math.pow(this.width,2) 
-      return area; 
+      return  Math.pow(this.width,2) 
     }
 }
+module.exports.Square = Square;
 
-let a = new Triangle({ width: 100, height: 100 });
-let s = a.getArea();
-console.log(s);

@@ -1,13 +1,19 @@
-var getArea = require('./shapesarea.js');
+var Figure = require('./shapesarea.js');
+var Triangle = Figure.Triangle;
+var Square = Figure.Square;
+var Rectangle = Figure.Rectangle;
+
 
 try {
-  var t = getArea('Triangle',  { width: 100, height: 100 });
-  console.log(t);
-  var s = getArea('Square',    { width: 100 });
+  let a = new Triangle({ width: 100, height: 100 });
+  let s = a.getArea();
   console.log(s);
-  var r = getArea('Rectangle', { width: 100, height: 100 });
-  console.log(r);
-  var b = getArea('Bogus');
+  let sq = new Square({ width: 100});
+  s = sq.getArea();
+  console.log(s);
+  let re = new Rectangle({ width: 100, height: 10});
+  s = re.getArea();
+  console.log(s);
 }
 catch (e) {
   console.log(e);
