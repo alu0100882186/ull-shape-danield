@@ -8,7 +8,6 @@ class Shape {
   }
 
   getArea() {
-      //let shape = new Shape.Shapes[this.shape](this.options)
       let shape = new Shape.Shapes[this.constructor.name](this.options)
       let area = shape.getArea()
       return area; 
