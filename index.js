@@ -1,7 +1,6 @@
-var Figure = require('./shapesarea.js');
-var Triangle = Figure.Triangle;
-var Square = Figure.Square;
-var Rectangle = Figure.Rectangle;
+var Triangle = require('./triangle.js');
+var Square = require('./square.js');
+var Rectangle = require('./rectangle.js');
 
 
 try {
