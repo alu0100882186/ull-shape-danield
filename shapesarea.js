@@ -3,7 +3,7 @@
 class Shape {
        
   constructor(options) {
-    this.options = options
+    Object.assign(this, options);
   }
 
   getArea() {
