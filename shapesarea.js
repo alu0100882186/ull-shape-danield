@@ -8,8 +8,7 @@ class Shape {
 
   getArea() {
       let shape = new Shape.Shapes[this.constructor.name](this)
-      let area = shape.area()
-      return area; 
+      return shape.area()
   }
   
 }
