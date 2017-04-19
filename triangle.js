@@ -2,7 +2,6 @@ let Shape = require('./shapesarea.js');
 
 class Triangle extends Shape {
     constructor(options) {
-      Shape.Shapes.Triangle = Triangle;
       super(options)
       this.width = options.width;
       this.height = options.height;
@@ -11,4 +10,5 @@ class Triangle extends Shape {
       return 0.5 * this.width * this.height;
     }
 }
+Shape.Shapes.Triangle = Triangle;
 module.exports = Triangle;
