@@ -4,7 +4,7 @@ class Triangle extends Shape {
     constructor(options) {
       super(options)
     }
-    getArea() {
+    area() {
       return 0.5 * this.width * this.height;
     }
 }

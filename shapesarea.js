@@ -7,8 +7,8 @@ class Shape {
   }
 
   getArea() {
-      let shape = new Shape.Shapes[this.constructor.name](this.options)
-      let area = shape.getArea()
+      let shape = new Shape.Shapes[this.constructor.name](this)
+      let area = shape.area()
       return area; 
   }
   

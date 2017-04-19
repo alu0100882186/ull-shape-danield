@@ -3,7 +3,7 @@ class Square extends Shape {
     constructor(options) {
       super(options)
     }
-    getArea() {
+    area() {
       return  Math.pow(this.width,2) 
     }
 }

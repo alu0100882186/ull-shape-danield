@@ -3,7 +3,7 @@ class Rectangle extends Shape {
     constructor(options) {
       super(options)
     }
-    getArea() {
+    area() {
       return this.width * this.height;
     }
 }
