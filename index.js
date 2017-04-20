@@ -5,10 +5,16 @@ var Square = require('./square.js');
 var Rectangle = require('./rectangle.js');
 var readline = require('readline');
 
-
 try {
-  let t = new Shape({ width: 100, height: 100 }, 'Triangle');
+  let arg = process.argv[2] || '{"width":9, "height":5}';
+  let obj = JSON.parse(arg);
+  let type = process.argv[3] || 'Rectangle';
+  let t = new Shape(obj, type);
   let s = t.getArea();
+  console.log(s);
+
+  t = new Shape({ width: 100, height: 100 }, 'Triangle');
+  s = t.getArea();
   console.log(s);
 
   let a = new Triangle({ width: 100, height: 100 });
