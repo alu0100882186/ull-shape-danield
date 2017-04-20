@@ -1,14 +1,24 @@
-'use strict'
+'use strict';
+let util = require('util');
 
 class Shape {
        
-  constructor(options) {
+  constructor(options, shape) {
     Object.assign(this, options);
+    this.shape =  shape || this.constructor.name;
   }
 
   getArea() {
-      let shape = new Shape.Shapes[this.constructor.name](this)
-      return shape.area()
+   try {
+      let shape = this;
+      if (this.constructor.name === 'Shape') 
+        shape = new Shape.Shapes[this.shape](this);
+      return shape.area();
+   }
+   catch(e) {
+     console.error(`Can't compute area of '${this.shape}' shape.`);
+     return null;
+   }
   }
   
 }
