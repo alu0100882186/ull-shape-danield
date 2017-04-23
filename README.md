@@ -1,4 +1,4 @@
-## Práctica "Evaluar Módulos"
+## Práctica: Evaluar Módulos
 
 ### Aceptar Tarea
 
