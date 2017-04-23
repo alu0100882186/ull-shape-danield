@@ -12,14 +12,14 @@
 
 ### Descripción
 
-Uno de los objetivos de esta práctica  es aprender a crear packages NodeJS y publicarlos en [npm](https://www.npmjs.com). El paquete se construye a partir de
-el código que se desarrolló en la [práctica evaluar strategy pattern](practicaevaluastrategypattern.md).
+Uno de los objetivos de esta práctica  es aprender a crear packages NodeJS y publicarlos en [npm](https://www.npmjs.com). El paquete se construye a partir de un repo [ULL-ESIT-DSI-1617/evalua-module](https://github.com/ULL-ESIT-DSI-1617/evalua-module)
+que contiene una solución a la [práctica evaluar strategy pattern](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaevaluastrategypattern.html).
 
 En esta tarea deberá trabajar con varios repos, uno para el módulo principal `ull-shape` y uno para cada shape específica: cree los diferentes repos dentro de la organización `ULL-ESIT-DSI-1617` siguiendo el patrón `ull-shape-team` para el módulo principal y `ull-shape-team-triangle` para el del triángulo, etc.
 
 ### Hitos
 
-1. Puede partir del repo de GitHub dado por la asignación de esta tarea. Este repo contiene una solución usando el strategy-pattern al problema de eliminar el switch smell en el cálculo del área de las Shapes. Puede usarlo para crear el resto de los repos necesarios para esta práctica
+1. Puede partir del [repo de GitHub dado por la asignación de esta tarea ULL-ESIT-DSI-1617/evalua-module](https://github.com/ULL-ESIT-DSI-1617/evalua-module). Este repo contiene una solución usando el strategy-pattern al problema de eliminar el switch smell en el cálculo del área de las Shapes. Puede usarlo para crear el resto de los repos necesarios para esta práctica
 2. Se trata de construir un primer módulo npm `ull-shape` con el código de la clase `Shape`
 3. Se construirá un módulo npm `ull-shape-triangle` que contenga la clases `Triangle`
 4. En general, para cada tipo particular de forma geométrica `x` se construirá un módulo npm `ull-shape-x` que contenga la clase `X`
@@ -46,3 +46,4 @@ En esta tarea deberá trabajar con varios repos, uno para el módulo principal `
 * [Apuntes: Pruebas. Mocha](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html)
 * [Apuntes: Pruebas. Should](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html#shouldl)
 * [Apuntes: Integración Contínua. Travis](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/travis.html)
+
