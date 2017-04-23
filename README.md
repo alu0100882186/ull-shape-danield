@@ -34,7 +34,7 @@ En esta tarea deberá trabajar con varios repos, uno para el módulo principal `
 ### Referencias
 
 * Véase la sección
-[Creación de Paquetes y Módulos en NodeJS](../apuntes/nodejspackages.md)
+[Creación de Paquetes y Módulos en NodeJS](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/npm/nodejspackages.html)
 * Documentación:  [documentation.js](http://documentation.js.org/), [jsdoc](https://www.npmjs.com/package/jsdoc), [docco](http://jashkenas.github.io/docco/))
 * Véase la sección [Gulp](../apuntes/gulp/README.md)
 * [Apuntes: Code Smells](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/codesmell.html)
