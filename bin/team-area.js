@@ -2,8 +2,8 @@ let util = require('util');
 let Shape = require('../lib/shapesarea.js');
 
 try{
-  let type = process.arg[2]
-  let Module = require ('@alu0100882186/ull-shape-' + type.tolowercase());
+  let type = process.arg[2];
+  let Module = require ('@alu0100882186/ull-shape-' + type.tolowercase()) +'-danield';
   let arg = process.argv[3];
   let obj = JSON.parse(arg.toString());
   let t = new Shape (obj, type);
