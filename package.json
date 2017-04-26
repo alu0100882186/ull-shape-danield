@@ -1,27 +1,26 @@
 {
-  "name": "switchsmell",
-  "version": "1.0.0",
-  "description": "ejemplos de switch smell.",
+  "name": "ull-shape-danield",
+  "version": "0.1.0",
+  "description": "Modulo principal shape",
+  "main": "gulpfile.js",
+  "bin": "./path/to/program",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --require should"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ULL-ESIT-DSI-1617/evalua-strategy-pattern.git"
+    "url": "https://github.com/alu0100882186/ull-shape-danield"
   },
-  "keywords": [
-    "js",
-    "switch smell"
-  ],
-  "author": "Casiano Rodriguez Leon",
-  "license": "MIT",
+  "author": "Daniel Diaz",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-DSI-1617/evalua-strategy-pattern/issues"
+    "url": "https://github.com/alu0100882186/ull-shape-danield/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/alu0100882186/ull-shape-danield",
   "dependencies": {
-    "gulp-shell": "^0.6.3",
-    "mocha": "^2.3.3",
-    "should": "^7.1.1"
+    "util": "^0.10.3"
   }
 }
